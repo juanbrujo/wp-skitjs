@@ -1,0 +1,30 @@
+<h1>{{ title }}</h1>
+
+{{{ content }}}
+
+<hr>
+<p>
+  (autor: <em>{{ author.name }}</em> | fecha: <em>{{ date }}</em>)
+</p>
+<hr>
+<h2>Imagen</h2>
+<p>
+  <img src="{{ featured_image.attachment_meta.sizes.thumbnail.url }}">
+  {{ featured_image.attachment_meta.file }}
+</p>
+<hr>
+<h2>Categorías</h2>
+<ul>
+{{#each terms.category }}
+  <li>{{ name }}</li>
+{{/each}}
+</ul>
+<hr>
+<h2>Etiquetas</h2>
+<ul>
+{{#each terms.post_tag }}
+  <li>{{ name }}</li>
+{{/each}}
+</ul>
+
+<p><a href="/">Volver</a></p>

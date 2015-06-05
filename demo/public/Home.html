@@ -1,0 +1,21 @@
+<h1>Home</h1>
+
+<ul>
+{{#each lists}}
+  <li>
+    <a data-list="{{key}}" class="list-item {{#if selected}} selected{{/if}}">{{name}}</a>
+  </li>
+{{/each}}
+</ul>
+
+<h2>{{ listName }}</h2>
+<ul>
+{{#posts}}
+  <!-- loop -->
+  <li>
+    <a href="/{{slugify title}}-{{ID}}">{{title}}</a> (autor: <em>{{ author.name }}</em> | fecha: <em>{{ date }}</em>)
+  </li>
+{{else}}
+  <li>No results. (<a href="/">Start over</a>)</li>
+{{/posts}}
+</ul>
