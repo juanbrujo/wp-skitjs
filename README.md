@@ -1,15 +1,16 @@
 # WP-SkitJS
-**SkitJS** &amp; **WordPress** integration through **WP-API**
+**SkitJS** &amp; **WordPress** integration using **WP-API**
 
-#### TL;DR
-**SkitJS** as a frontend, **WordPress** as backend. They communicate using **WP-API** (just one-way data).
+### TL;DR
+
+**SkitJS** as a frontend, **WordPress** as backend. The communication is through **WP-API** (just one-way data).
 
 ## Description
 This example is a proof-of-concept about how to separate de view of WordPress, making it independent and comunicating (one-way data) using a json API ([WP-API](https://wordpress.org/plugins/json-rest-api/) serves it).
 
 To handle the *View* part I chose [SkitJS](http://skitjs.com/) because of it's simplicity.
 
-![wp-skitjs](https://dl.dropboxusercontent.com/u/3522/wp-skitjs.png)
+![wp-skitjs](https://i.imgur.com/vzZogBV.png)
 
 ## Use
 
